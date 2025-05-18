@@ -1,0 +1,14 @@
+# Python
+__pycache__/
+*.pyc
+
+# App-specific
+users.db
+encryption.key
+mybackups/
+mylogs/
+*.log
+
+# IDE
+.vscode/
+.idea/

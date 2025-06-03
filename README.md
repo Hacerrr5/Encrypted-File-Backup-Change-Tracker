@@ -53,12 +53,10 @@ All backups are AES-encrypted using the `cryptography` library. Files can only b
 
 ## Developer
 
-Developed by [Hacer](https://github.com/yourusername).
+Developed by [Hacer](https://github.com/Hacerrr5).
 
 ## License
 
 This project is licensed under the MIT License.
 
 ---
-
-💡 Looking for Turkish GPT-powered tools and resources? Visit [https://gptonline.ai/tr/](https://gptonline.ai/tr/)

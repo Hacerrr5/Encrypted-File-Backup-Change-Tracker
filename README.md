@@ -1,27 +1,39 @@
 # File Change Tracker
 
-This is a desktop application that monitors file changes in specific folders (Desktop and Downloads by default), creates a **backup**, **encrypts** the changed file, and deletes the original file. It also supports **user authentication** for secure decryption.
+A desktop application that monitors file changes in specified folders (Desktop and Downloads by default), automatically creates **backups**, **encrypts** modified files using AES encryption, and deletes the original files for added security. The app also features **user authentication** to securely decrypt files.
 
 ## Features
 
 - Real-time monitoring of Desktop and Downloads folders
 - On file modification:
-  - Creates a backup
+  - Creates an encrypted backup
   - Encrypts the file using AES
-  - Deletes the original file
-- GUI interface with:
-  - File decryption (with user login)
-  - User registration
+  - Deletes the original file to protect data
+- User-friendly GUI with:
+  - File decryption (requires user login)
+  - User registration system
 
-## Usage
+## Supported File Types
 
-1. Clone or download the project:
+Supports common file types including `.pdf`, `.jpg`, `.png`, `.mp4`, `.mp3`, `.docx`, `.xlsx`, `.pptx`, `.txt`, `.rtf`, and more.
+
+## Requirements
+
+- Python 3.7 or newer
+- Required Python packages:
+  - `cryptography`
+  - `watchdog`
+  - `tkinter` (bundled with Python)
+
+## Installation & Usage
+
+1. Clone the repository:
     ```bash
-    git clone https://github.com/yourusername/project-name.git
-    cd project-name
+    git clone https://github.com/Hacerrr5/Encrypted-File-Backup-Change-Tracker.git
+    cd Encrypted-File-Backup-Change-Tracker
     ```
 
-2. Install required Python modules:
+2. Install dependencies:
     ```bash
     pip install cryptography watchdog
     ```
@@ -33,23 +45,14 @@ This is a desktop application that monitors file changes in specific folders (De
 
 ## Interface Overview
 
-- **Start:** Begin monitoring changes in selected directories.
+- **Start:** Begin monitoring the selected folders for file changes.
 - **Stop:** Stop monitoring.
-- **Decrypt File:** Select and decrypt a file (authentication required).
-- **Add User:** Add a new user account (required for decryption).
-
-## Supported File Types
-
-Includes: `.pdf`, `.jpg`, `.png`, `.mp4`, `.mp3`, `.docx`, `.xlsx`, `.pptx`, `.txt`, `.rtf`, and more.
-
-## Requirements
-
-- Python 3.7 or newer
-- `cryptography`, `watchdog`, `tkinter` (Tkinter is bundled with Python)
+- **Decrypt File:** Select and decrypt files (requires authentication).
+- **Add User:** Register a new user (needed for decryption).
 
 ## Security
 
-All backups are AES-encrypted using the `cryptography` library. Files can only be decrypted with valid username and password credentials.
+Backups and encrypted files use AES encryption via the `cryptography` library. Only authenticated users can decrypt files, ensuring data safety.
 
 ## Developer
 
@@ -60,3 +63,5 @@ Developed by [Hacer](https://github.com/Hacerrr5).
 This project is licensed under the MIT License.
 
 ---
+
+
